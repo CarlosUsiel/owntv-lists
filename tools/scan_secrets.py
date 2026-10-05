@@ -94,6 +94,9 @@ def walk(root: str):
         for f in sorted(files):
             if f.endswith((".pyc", ".png", ".jpg", ".zip")):
                 continue
+            # signature.json is a list of public file hashes (and one signature): nothing secret in it.
+            if f == "signature.json":
+                continue
             yield os.path.join(base, f)
 
 
