@@ -1,0 +1,87 @@
+{
+  "format": "owntv-media-sources",
+  "version": 1,
+  "mediaType": "manga",
+  "sources": [
+    {
+      "id": "mangadex",
+      "name": "MangaDex",
+      "adapter": "MangaDex-API",
+      "baseUrls": [
+        "https://api.mangadex.org"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "weebcentral",
+      "name": "WeebCentral",
+      "adapter": "WeebCentral-site",
+      "baseUrls": [
+        "https://weebcentral.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "mangapill",
+      "name": "MangaPill",
+      "adapter": "MangaPill-site",
+      "baseUrls": [
+        "https://mangapill.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "mangakatana",
+      "name": "MangaKatana",
+      "adapter": "MangaKatana-site",
+      "baseUrls": [
+        "https://mangakatana.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "mangakakalot",
+      "name": "Mangakakalot / Natomanga",
+      "adapter": "Kakalot-site",
+      "baseUrls": [
+        "https://www.natomanga.com",
+        "https://www.mangakakalot.gg"
+      ],
+      "enabled": true,
+      "status": "DEAD",
+      "builtIn": true
+    },
+    {
+      "id": "comick",
+      "name": "ComicK",
+      "adapter": "Comick-API",
+      "baseUrls": [
+        "https://api.comick.dev",
+        "https://api.comick.io"
+      ],
+      "enabled": true,
+      "status": "DEAD",
+      "builtIn": true
+    },
+    {
+      "id": "mangasee",
+      "name": "MangaSee / MangaLife",
+      "adapter": "WeebCentral-site",
+      "baseUrls": [
+        "https://mangasee123.com",
+        "https://manga4life.com"
+      ],
+      "enabled": true,
+      "status": "DEAD",
+      "builtIn": true
+    }
+  ]
+}

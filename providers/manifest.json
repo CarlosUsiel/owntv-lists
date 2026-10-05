@@ -1,0 +1,2020 @@
+{
+  "name": "OwnTV provider pack",
+  "version": "1.3.1",
+  "description": "OwnTV's own pack: every provider found in ARVIO, lolapp and PlayTorrio, plus the Latinuvio V2 providers, ported or copied unchanged from the public Nuvio repositories that have them. Every provider ships enabled (the owner's choice); the ones that did not work at the last check say so at the start of their description.",
+  "author": "OwnTV",
+  "scrapers": [
+    {
+      "id": "cuevana",
+      "name": "Cuevana",
+      "description": "Cuevana (wv3.cuevana3.eu): Latino, Castellano and English links, resolved and checked. From lolapp.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/cuevana.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es",
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "poseidonhd",
+      "name": "PoseidonHD",
+      "description": "PoseidonHD2 (poseidonhd2.co): Latino, Castellano and English links, resolved and checked. From lolapp.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/poseidonhd.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es",
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "smartpelis",
+      "name": "SmartPelis",
+      "description": "SmartPelis (smartpelis.tv): Latino, Castellano and subtitled links, resolved and checked. From lolapp.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/smartpelis.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelispedia",
+      "name": "Pelispedia",
+      "description": "Pelispedia (pelispedia.is): Latino, Castellano and subtitled links, resolved and checked. From lolapp.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/pelispedia.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "serieskao",
+      "name": "SeriesKao",
+      "description": "SeriesKao (serieskao.top, Xupalace as fallback): Latino, Castellano and subtitled links, resolved and checked. From lolapp. Not testable from the test PC on 2026-10-04: every hoster it lists is geo-blocked or blocked by DNS from the test PC (the page, proof of work and decryption work); enabled because its steps pass against recorded real answers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/serieskao.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "rgshows",
+      "name": "RGShows",
+      "description": "RGShows (api.rgshows.ru): one English HLS link per title, checked before it is offered. From ARVIO. Not testable from the test PC on 2026-10-04: api.rgshows.ru is unreachable from the test PC; enabled because its steps pass against recorded real answers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of ARVIO)",
+      "filename": "providers/rgshows.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidup",
+      "name": "VidUp",
+      "description": "VidUp (vidup.to): multi-CDN HLS up to 4K, checked before it is offered. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/vidup.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidapi",
+      "name": "VidAPI",
+      "description": "VidAPI (streamdata.vaplayer.ru): HLS links, checked before they are offered. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/vidapi.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "flaxmovies",
+      "name": "FlaxMovies",
+      "description": "FlaxMovies (flaxmovies.xyz): multi-CDN HLS links through its workers, checked. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/flaxmovies.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "peestream",
+      "name": "PeeStream",
+      "description": "PeeStream (providers.peestream.in): HLS links from its scraper service, checked. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/peestream.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "frame",
+      "name": "FRAME",
+      "description": "FRAME (api.peestream.in): links from its seven servers, checked. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/frame.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "lmscript",
+      "name": "LMScript",
+      "description": "LMScript (lmscript.xyz): direct MP4 per quality for films, checked. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/lmscript.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "hexa",
+      "name": "Hexa",
+      "description": "Hexa (hexa.su / flixer.su): links decrypted through enc-dec.app, checked. From PlayTorrio. Not testable from the test PC on 2026-10-04: hexa.su does not resolve and enc-dec.app/api/enc-hexa times out from the test PC; enabled because its steps pass against recorded real answers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/hexa.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "recloud",
+      "name": "ReCloud (anime)",
+      "description": "ReCloud (cdn.4animo.xyz): anime episodes, Sub and Dub HLS, placed by TMDB id through AniList. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/recloud.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "anihq",
+      "name": "AniHQ (anime)",
+      "description": "AniHQ (anihq.cc): anime episodes, Sub and Dub, resolved from its VOE player, placed by TMDB id through AniList. From PlayTorrio. Not testable from the test PC on 2026-10-04: its VOE embeds (voe.sx) are unreachable from the test PC (the episode page is found); enabled because its steps pass against recorded real answers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/anihq.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "hentaini",
+      "name": "Hentaini (Adult)",
+      "description": "Adult anime (18+) from hentaini.com. Hidden on Kids profiles and behind the adult switch. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/hentaini.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "videasy",
+      "name": "Videasy",
+      "description": "Not working at last check (2026-10-04): api.speedracelight.com (the API host this copy uses) answers 502 and api.videasy.net is unreachable. Streams from the Videasy embed API. Supports movies and TV shows. (Copied unchanged from Trixjustbetter/videasy-nuvio@5fc9d1e7f79f.)",
+      "version": "1.0.7",
+      "author": "copied from Trixjustbetter/videasy-nuvio",
+      "filename": "providers/videasy.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidfast",
+      "name": "Vidfast",
+      "description": "Not working at last check (2026-10-04): vidfast.vc answers 404 for the embed pages and enc-dec.app rejects the request. Streams from the Vidfast embed API. Supports movies and TV shows. (Copied unchanged from Trixjustbetter/videasy-nuvio@5fc9d1e7f79f.)",
+      "version": "1.0.0",
+      "author": "copied from Trixjustbetter/videasy-nuvio",
+      "filename": "providers/vidfast.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidlink",
+      "name": "Vidlink",
+      "description": "Vidlink streaming with encrypted TMDB ID support for movies and TV shows. Not testable from the test PC on 2026-10-04: vidlink.pro is unreachable from the test PC; enabled as its source has it. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.0",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/vidlink.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vixsrc",
+      "name": "Vixsrc",
+      "description": "Not working at last check (2026-10-04): the film page no longer carries a master playlist address. Vixsrc M3U8 streaming with auto quality selection. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.0",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/vixsrc.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidsrc",
+      "name": "VidSrc",
+      "description": "Not working at last check (2026-10-04): vsembed.ru answers a page that names no stream any more. VidSrc M3U8 streaming with multiple server support. (Copied unchanged from iberiaimm/nuvio-providers@991a6a24b54f.)",
+      "version": "1.0.0",
+      "author": "copied from iberiaimm/nuvio-providers",
+      "filename": "providers/vidsrc.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "playimdb",
+      "name": "PlayIMDb (Movies)",
+      "description": "Not working at last check (2026-10-04): vsembed.ru answers a page that names no stream any more. High-Speed Direct Streaming for Movies (IMDb ID Extract) (Copied unchanged from frankrsilva/nuvio-repository@69b968e197bb.)",
+      "version": "1.1.4",
+      "author": "copied from frankrsilva/nuvio-repository",
+      "filename": "providers/playimdb.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "playimdb_series",
+      "name": "PlayIMDb (Series)",
+      "description": "Not working at last check (2026-10-04): vsembed.ru answers a page that names no stream any more. High-Speed Direct Streaming for TV Shows (StreamIMDb Extract) (Copied unchanged from frankrsilva/nuvio-repository@69b968e197bb.)",
+      "version": "1.2.1",
+      "author": "copied from frankrsilva/nuvio-repository",
+      "filename": "providers/playimdb_series.js",
+      "supportedTypes": [
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "dooflix",
+      "name": "DooFlix",
+      "description": "Fast streaming provider with direct TMDB integration. Not testable from the test PC on 2026-10-04: panel.watchkaroabhi.com fails its TLS handshake from the test PC; enabled as its source has it. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.0",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/dooflix.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "brazucaplay",
+      "name": "BrazucaPlay",
+      "description": "Brazuca Play - Movies & Series in English & Portuguese. Not testable from the test PC on 2026-10-04: api.videasy.net and api2.videasy.net are unreachable from the test PC; enabled as its source has it. (Copied unchanged from frankrsilva/nuvio-repository@69b968e197bb.)",
+      "version": "1.0.0",
+      "author": "copied from frankrsilva/nuvio-repository",
+      "filename": "providers/brazucaplay.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "pt"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "netmirror",
+      "name": "NetMirror",
+      "description": "Not working at last check (2026-10-04): tv.imgcdn.kim answers but no stream comes out of the flow any more. Streaming links from netmirror. Automatically disabled on iOS due to compatibility issues. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.3",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/netmirror.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidmody",
+      "name": "Vidmody",
+      "description": "Not working at last check (2026-10-04): vidmody.com has no DNS record any more. Doğrudan çoklu dil ve altyazı destekli HLS film ve dizi akış sağlayıcısı (1080p). (Copied unchanged from falsisdev/anthology@f1eee8cc4e55.)",
+      "version": "1.8.25",
+      "author": "copied from falsisdev/anthology",
+      "filename": "providers/vidmody.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "tr",
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidrock",
+      "name": "Vidrock",
+      "description": "Vidrock streaming with AES-CBC encrypted sources. Not testable from the test PC on 2026-10-04: aesdec.nuvioapp.space is unreachable from the test PC; enabled as its source has it. (Copied unchanged from iberiaimm/nuvio-providers@991a6a24b54f.)",
+      "version": "1.0.0",
+      "author": "copied from iberiaimm/nuvio-providers",
+      "filename": "providers/vidrock.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidzee",
+      "name": "VidZee",
+      "description": "Direct validated seekable HLS streams from VidZee's multi-server player. (Copied unchanged from A2R14N/nuvio-providers@ec8788e5d824.)",
+      "version": "1.0.1",
+      "author": "copied from A2R14N/nuvio-providers",
+      "filename": "providers/vidzee.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "xpass",
+      "name": "XPass",
+      "description": "Not working at last check (2026-10-04): play.xpass.top answers its page but no playlist. Direct HLS streams and subtitles for movies and TV series from XPass. (Copied unchanged from A2R14N/nuvio-providers@ec8788e5d824.)",
+      "version": "1.0.7",
+      "author": "copied from A2R14N/nuvio-providers",
+      "filename": "providers/xpass.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "mapple",
+      "name": "Mapple",
+      "description": "Mapple multi-hoster movies and TV streaming with PoW session verification and direct HLS streams. Not testable from the test PC on 2026-10-04: mapple.fun answers 403 (Cloudflare) to a non-browser client from the test PC; enabled as its source has it. (Copied unchanged from ktsevents/nuvio@bb6f4cab648d.)",
+      "version": "1.0.0",
+      "author": "copied from ktsevents/nuvio",
+      "filename": "providers/mapple.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "purstream",
+      "name": "Purstream",
+      "description": "Films and series in French (VF) / subtitled French (VOSTFR) / multi-language (MULTI) from purstream.art. Not testable from the test PC on 2026-10-04: api.purstream.club is unreachable from the test PC; enabled as its source has it. (Copied unchanged from ktsevents/nuvio@bb6f4cab648d.)",
+      "version": "3.0.0",
+      "author": "copied from ktsevents/nuvio",
+      "filename": "providers/purstream.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "fr"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "kisskh",
+      "name": "Kisskh",
+      "description": "Kisskh streaming provider. Not testable from the test PC on 2026-10-04: kisskh.nl is unreachable from the test PC; enabled as its source has it. (Copied unchanged from phisher98/phisher-nuvio-providers@91cc7194f2b8.)",
+      "version": "1.0.0",
+      "author": "copied from phisher98/phisher-nuvio-providers",
+      "filename": "providers/kisskh.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "hindmoviez",
+      "name": "Hindmoviez",
+      "description": "Hindmoviez streaming provider. Not testable from the test PC on 2026-10-04: hindmoviez.cafe answers 403 (Cloudflare) to a non-browser client from the test PC; enabled as its source has it. (Copied unchanged from phisher98/phisher-nuvio-providers@91cc7194f2b8.)",
+      "version": "1.0.0",
+      "author": "copied from phisher98/phisher-nuvio-providers",
+      "filename": "providers/hindmoviez.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fsonline",
+      "name": "FSOnline",
+      "description": "Romanian Movies & TV Series Scraper. Not testable from the test PC on 2026-10-04: www3.fsonline.app answers 403 (Cloudflare) to a non-browser client from the test PC; enabled as its source has it. (Copied unchanged from A2R14N/nuvio-providers@ec8788e5d824.)",
+      "version": "1.0.4",
+      "author": "copied from A2R14N/nuvio-providers",
+      "filename": "providers/fsonline.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "ro"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fourkhdhub",
+      "name": "4KHDHub",
+      "description": "4KHDHub direct links. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.2",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/fourkhdhub.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "a111477",
+      "name": "111477",
+      "description": "Stremio addon (st.111477.xyz) with base64url config token. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/a111477.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "movienight",
+      "name": "MovieNight",
+      "description": "Multi-server HLS (Dallas/Seattle 4K...). SSE responses. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/movienight.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "movy",
+      "name": "Movy",
+      "description": "14 city servers (Miami 4K, Seattle, Berlin...). mvm1 cipher. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/movy.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "rivestream",
+      "name": "RiveStream",
+      "description": "Multi-provider HLS/MP4 (apex, pulse, quasar...). (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/rivestream.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vadapav",
+      "name": "Vadapav",
+      "description": "Not working at last check (2026-10-04): stremio.vadapav.mov answers 502. Direct HTTP streams from the vadapav.mov Stremio addon. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/vadapav.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vuflix",
+      "name": "Vuflix",
+      "description": "Not working at last check (2026-10-04): vuflix.co answers its pages but the player no longer yields a stream. Multi-provider aggregator (15 backends), relay-token unwrap. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/vuflix.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "xdownloader",
+      "name": "XDownloader",
+      "description": "Films365 API, bearer auth; movie direct + TV season/episode. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
+      "version": "0.2.0",
+      "author": "copied from ahmedelkassrawy/nuvio-providers",
+      "filename": "providers/xdownloader.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidnest",
+      "name": "Vidnest",
+      "description": "Not working at last check (2026-10-04): first.vidnest.fun answers 530 (origin unreachable) for every server. Vidnest streaming with encrypted AES-GCM sources. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.0",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/vidnest.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidnest-anime",
+      "name": "VidnestAnime",
+      "description": "Not working at last check (2026-10-04): backend.vidnest.fun is unreachable (the vidnest.fun hosts are down). Vidnest anime streaming with TMDB→AniList mapping and 5 servers (hindi, satoru, miko, pahe, anya) (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
+      "version": "1.0.0",
+      "author": "copied from yoruix/nuvio-providers",
+      "filename": "providers/vidnest-anime.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelisplus",
+      "name": "PelisPlusHD",
+      "description": "Películas y series en espanol latino desde PelisPlusHD.la. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "12.7.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelisplus.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "tioplus",
+      "name": "TioPlus",
+      "description": "Películas y series en HD (Latino) con bypass de doble Base64. Not testable from the test PC on 2026-10-04: its hoster hosts (vidhideplus.com, emturbovid.com...) are blocked from the test PC; enabled as its source has it. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "2.1.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/tioplus.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinecalidad",
+      "name": "CineCalidad",
+      "description": "Not working at last check (2026-10-04): the site answers but no playable hoster link is found. Películas en HD (Latino) con servidores rápidos como Voe y Filemoon. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "2.3.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/cinecalidad.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "hackstore",
+      "name": "HackStore",
+      "description": "Not working at last check (2026-10-04): the site answers but no playable hoster link is found. API Nativa de Películas en HD. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "12.9.2",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/hackstore.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fuegocine",
+      "name": "FuegoCine",
+      "description": "Películas y series con enlaces directos y alta velocidad. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "7.0.3",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/fuegocine.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "seriesmetro",
+      "name": "SeriesMetro",
+      "description": "Películas y series en Latino desde SeriesMetro. Resuelve vía Fastream. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/seriesmetro.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "embed69",
+      "name": "Embed69",
+      "description": "Películas y series vía embed69.org. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "3.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/embed69.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "jkanime",
+      "name": "JKAnime",
+      "description": "Anime subtitulado y doblado desde JKAnime. Not testable from the test PC on 2026-10-04: jkanime.net answers 403 (Cloudflare challenge) to a non-browser client from the test PC; enabled as its source has it. (Copied unchanged from municipalidad1998/nuvio-providers@514296c870b9.)",
+      "version": "1.0.0",
+      "author": "copied from municipalidad1998/nuvio-providers",
+      "filename": "providers/jkanime.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinehax",
+      "name": "CineHax",
+      "description": "CineHax / Unlimplay: Latino, Castellano and Subtitulado HLS links (StreamWish, VidHide), resolved and checked.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of lolapp)",
+      "filename": "providers/cinehax.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "downloadeverything",
+      "name": "DownloadEverything",
+      "description": "Not working at last check (2026-10-04): the search service answers 403 to a non-browser client. Direct files for films and episodes from DownloadEverything: Pixeldrain, HubCloud and plain MP4 / MKV links.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/downloadeverything.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "lookmovie",
+      "name": "LookMovie",
+      "description": "Not working at last check (2026-10-04): none of its mirrors (lookmovie2.to, lookmovie.foundation) is reachable from the test PC, so this port could not be tested. HLS links per quality for films and episodes from LookMovie (several mirrors).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/lookmovie.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "watchhentai",
+      "name": "WatchHentai (Adult)",
+      "description": "Not working at last check (2026-10-04): the video files (hstorage.xyz) answer 403 without a browser session and 404 with the site as referrer. Adult (18+) anime episodes from watchhentai.net, MP4.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/watchhentai.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidcore",
+      "name": "VidCore",
+      "description": "Multi-CDN HLS links from VidCore (vidcore.io), through enc-dec.app.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/vidcore.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinesu",
+      "name": "CineSu",
+      "description": "Not working at last check (2026-10-04): the CDN host that serves the computed address answers 523 (origin unreachable). HLS master of a film or episode on the CineSu CDN (address computed from the TMDB id).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/cinesu.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinesrc",
+      "name": "CineSrc",
+      "description": "Not working at last check (2026-10-04): the CDN host that serves the computed address answers 403. HLS master of a film or episode on the CineSrc CDN (address computed from the TMDB id).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/cinesrc.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bcine",
+      "name": "Bcine",
+      "description": "Not working at last check (2026-10-04): the CDN host answers 403 and the 1embed.cc fallback times out. HLS master of a film or episode on the Bcine CDN (address computed from the TMDB id).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/bcine.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinejoy",
+      "name": "CineJoy",
+      "description": "Not working at last check (2026-10-04): a stub: its API (api.shegu.st) answers 502 and needs ECDH P-256, HKDF and AES-GCM over binary bodies, which the plugin host cannot do. CineJoy (cinejoy.to): HLS and MP4 links from several servers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/cinejoy.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fsharetv",
+      "name": "FshareTV",
+      "description": "Not working at last check (2026-10-04): the film page answers 403 (Cloudflare) to a non-browser client. Direct links for films from FshareTV (fsharetv.cc).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/fsharetv.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fsonic",
+      "name": "FSonic",
+      "description": "Not working at last check (2026-10-04): the film page answers 403 (Cloudflare) to a non-browser client. Direct links for films from FSonic (fsonic.net).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/fsonic.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidvault",
+      "name": "VidVault",
+      "description": "Not working at last check (2026-10-04): vidvault.ru answers 404 to the token request. Direct MP4 / MKV files for films and episodes from VidVault (vidvault.ru).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/vidvault.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "zxcstream",
+      "name": "ZxcStream",
+      "description": "Not working at last check (2026-10-04): player.zxcstream.xyz answers 404 for all four servers. Links from ZxcStream's four servers (berkas, orion, aquarius, resshin).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/zxcstream.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "dulo",
+      "name": "Dulo",
+      "description": "Not working at last check (2026-10-04): the source stream (bexytv.com) answers 404. Multi-CDN HLS links for films and episodes from Dulo (dulo.gd / dulo.cx).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/dulo.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "description": "Not working at last check (2026-10-04): nova-streamz.vercel.app answers 402 (deployment suspended). Links for films and episodes from the Nova add-on service.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/nova.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "megasource",
+      "name": "MegaSource",
+      "description": "Not working at last check (2026-10-04): megasource.wasmer.app answers 410 (gone). Links for films and episodes from the MegaSource add-on service.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/megasource.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "multiembed",
+      "name": "MultiEmbed (2embed)",
+      "description": "Not working at last check (2026-10-04): the servers 2embed names (StreamWish mirrors, XPass) give no playable file any more. Multi-CDN links for films and episodes from 2embed (StreamWish and XPass servers).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/multiembed.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "meowtv",
+      "name": "MeowTV",
+      "description": "Not working at last check (2026-10-04): api.meowtv.ru answers 401 for every server. Links for films and episodes from MeowTV, through enc-dec.app.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/meowtv.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "flystream",
+      "name": "FlyStream",
+      "description": "Not working at last check (2026-10-04): flystream.net answers 403 to a non-browser client. HLS links (1080p, 4K HEVC) for films and episodes from FlyStream.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/flystream.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fmovies",
+      "name": "FMovies (VidEasy Yoru / Vyse)",
+      "description": "Not working at last check (2026-10-04): api.videasy.net is unreachable from the test PC, so this port could not be tested (its two servers are also in the public VidEasy providers). The two VidEasy servers ARVIO calls FMovies (\"Yoru Original\" and \"Vyse Hindi\").",
+      "version": "1.0.0",
+      "author": "OwnTV (port of ARVIO)",
+      "filename": "providers/fmovies.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en",
+        "hi"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "megaplay",
+      "name": "MegaPlay (anime)",
+      "description": "Not working at last check (2026-10-04): its getSources answer is encrypted now (\"enc\"), the port reads plain sources. Sub and Dub master HLS for an anime episode from MegaPlay.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/megaplay.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "anime123",
+      "name": "123AnimeHub (anime)",
+      "description": "Not working at last check (2026-10-04): the EchoVideo player answers no readable sources. HLS for an anime episode from 123AnimeHub's EchoVideo player.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/anime123.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "luna",
+      "name": "Luna (anime)",
+      "description": "Not working at last check (2026-10-04): the Next.js server action id the port calls is gone (the site answers its page); the actions it has now are downloads. Sub and Dub HLS for an anime episode from Luna's six servers.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/luna.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "anipm",
+      "name": "AniPM (anime)",
+      "description": "Not working at last check (2026-10-04): ani.pm answers 404 on its API. Sub and Dub servers for an anime episode from AniPM.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/anipm.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "tryembed",
+      "name": "TryEmbed (anime)",
+      "description": "Not working at last check (2026-10-04): tryembed.us.cc answers 403 on its stream API. Sub and Dub master HLS for an anime episode from TryEmbed.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/tryembed.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "anineko",
+      "name": "AniNeko (anime)",
+      "description": "Not working at last check (2026-10-04): the site answers a database error (\"Connection refused\"). Sub and Dub HLS for an anime episode from AniNeko.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/anineko.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "anidb",
+      "name": "AniDB (anime)",
+      "description": "Not working at last check (2026-10-04): anidb.app answers 503. Sub and Dub master HLS for an anime episode from anidb.app (not the AniDB database).",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/anidb.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "dulo-anime",
+      "name": "Dulo (anime)",
+      "description": "Not working at last check (2026-10-04): the source stream (bexytv.com) answers 404. HLS for an anime episode from Dulo.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/dulo-anime.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "animeslayer",
+      "name": "AnimeSlayer (Arabic anime)",
+      "description": "Not working at last check (2026-10-04): a stub: its server list API (patrimoines-en-mouvement.org) answers 503 and its MEGA servers need a local decrypting proxy, which a plugin cannot be. Arabic-subtitled anime from AnimeSlayer.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/animeslayer.js",
+      "supportedTypes": [
+        "anime"
+      ],
+      "contentLanguage": [
+        "ar",
+        "ja"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelisgo",
+      "name": "PelisGo",
+      "description": "Not working at last check (2026-10-04): pelisgo.online answers a Cloudflare challenge (403) to a non-browser client, so the flow could not be judged from the test PC. Descargas directas y streaming de alta fidelidad. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "9.1.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelisgo.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelispanda",
+      "name": "PelisPanda",
+      "description": "Not working at last check (2026-10-04): its search endpoint (pelispanda.org/wp-json/wpreact/v1/search) now answers the site's HTML page instead of JSON, so the flow no longer works. Películas y series directo desde pelispanda.org (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "12.9.8",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelispanda.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "lamovie",
+      "name": "LaMovie",
+      "description": "Not working at last check (2026-10-04): lamovie.cc does not connect from the test PC (every request times out), so the flow could not be judged. Proveedor premium con enlaces directos en 1080p y enfoque Latino. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "2.5.5",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/lamovie.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vimeus",
+      "name": "Vimeus",
+      "description": "Not working at last check (2026-10-04): vimeus.com/e/movie and /e/serie answer 503 (service unavailable) at last check, for every title tried; may be temporary. Películas, series y anime en Latino/Español vía Vimeus. Múltiples servidores (VOE, StreamWish, Filemoon, etc). (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.1",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/vimeus.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "areshd",
+      "name": "AresHD",
+      "description": "Works only for some titles at last check (2026-10-04): Oppenheimer: 2 StreamWish HLS links (1080p, Latino and Vose); Barbie, Breaking Bad and Stranger Things: 0 (series searches match a wrong film). Películas y series en Latino y Español desde AresHD. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.1.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/areshd.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cinemitas",
+      "name": "Cinemitas",
+      "description": "Works only for some titles at last check (2026-10-04): Oppenheimer: 1 StreamWish HLS link on the second run (0 on the first, probe timeouts); Spider-Man NWH, Barbie, Breaking Bad and Stranger Things: 0. Películas y series desde Cinemitas. Multi-resolución. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/cinemitas.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cine24h",
+      "name": "Cine24h",
+      "description": "Not working at last check (2026-10-04): cine24h.online answers a Cloudflare challenge (403) to a non-browser client, so the flow could not be judged from the test PC. Películas y series en Español y Latino. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/cine24h.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "peliculasflix",
+      "name": "PeliculasFlix",
+      "description": "Not working at last check (2026-10-04): its GraphQL API works and lists hoster links, but none gives a stream from the test PC (voe.sx and filemoon.sx do not connect, the StreamWish mirrors answer a JavaScript loading page, awish.pro answers 429). Películas en Latino, Español y VOSE con API GraphQL. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/peliculasflix.js",
+      "supportedTypes": [
+        "movie"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelisgratishd",
+      "name": "PelisGratisHD",
+      "description": "Not working at last check (2026-10-04): ver.pelis28.net fails its TLS handshake from the test PC, so the flow could not be judged. Películas y series en Latino, Español y VOSE. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelisgratishd.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "doramasflix",
+      "name": "DoramasFlix",
+      "description": "Not working at last check (2026-10-04): doramasflix.in is a client-rendered Next.js site now: the episode pages carry no player links (0 embed links for Squid Game and Crash Landing on You). Doramas y series asiáticas en Latino y Subtitulado. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/doramasflix.js",
+      "supportedTypes": [
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "verpelis",
+      "name": "VerPelis",
+      "description": "Works only for some titles at last check (2026-10-04): Oppenheimer: 3 StreamWish HLS links (1080p, Latino and Castellano, on both runs); Spider-Man NWH and Barbie: 0 (wrong or empty page); Breaking Bad and Stranger Things: 0 (only a voe.sx player, unreachable from the test PC). Películas y series actuales en español latino e inglés de verpelis.gratis. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/verpelis.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "allpeliculasse",
+      "name": "AllpeliculasSE",
+      "description": "Not working at last check (2026-10-04): its search API (allpeliculas.la/wp-api/v1/search) now answers the site's HTML page instead of JSON. Películas y series en Latino, Castellano y VOSE desde Allpeliculas. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/allpeliculasse.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "elifilms",
+      "name": "EliFilms",
+      "description": "Not working at last check (2026-10-04): its search API (allcalidad.re/api/rest/search) now answers the site's HTML page instead of JSON. Películas y series en Latino, Castellano y VOSE desde AllCalidad.re (EliFilms). (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/elifilms.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "entrepeliculasyseries",
+      "name": "EntrePeliculasySeries",
+      "description": "Not working at last check (2026-10-04): the file calls Node's https module at load time, which OwnTV's plugin host does not have (the script does not even load); run in Node it decrypts its hoster links but none of them (voe.sx, awish.pro, hglink.to) gives a stream from the test PC. Películas y series en Latino, Castellano y VOSE desde EntrePeliculasySeries.nz. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/entrepeliculasyseries.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "megadedeoficial",
+      "name": "MegaDedeOficial",
+      "description": "Not working at last check (2026-10-04): it passes the proof of work and decrypts its hoster links (VidHide, StreamWish, VOE), but none gives a stream from the test PC (voe.sx does not connect, awish.pro answers 429 or times out, the StreamWish mirrors answer a JavaScript loading page). Películas y series en Latino, Castellano y VOSE desde MegaDede.mobi. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/megadedeoficial.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelis182",
+      "name": "Pelis182",
+      "description": "Not working at last check (2026-10-04): the film page now carries one player, paulinito.com, which the file has no resolver for (0 links for every title). Gran catálogo de películas y series en Latino/Español desde Pelis182.net. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelis182.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "animeav1",
+      "name": "AnimeAV1",
+      "description": "Portal de anime especializado con encode moderno y gran velocidad. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/animeav1.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "henaojara",
+      "name": "Henaojara",
+      "description": "Gran catálogo de anime en audio latino y castellano desde henaojara.net. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/henaojara.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "homecine",
+      "name": "HomeCine",
+      "description": "Películas y series de HomeCine (homecine.to). (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/homecine.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelisyseries",
+      "name": "PelisySeries",
+      "description": "Not working at last check (2026-10-04): the film page carries only a trailer (no hoster links) and the site's search finds no series (Breaking Bad, Stranger Things). Películas y series con enlaces directos nitroflare y ok.ru. Resuelve a mp4/m3u8. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelisyseries.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "monoschinos",
+      "name": "MonosChinos",
+      "description": "Flaky at last check (2026-10-04): Embed69 is inlined into the file (OwnTV's plugin host has no sibling require); 3 links for Demon Slayer S01E01, embed-page addresses (bysesukior, mp4upload) the player may not open. Anime en VOSE/Latino con múltiples servidores. Resuelve vía embed69. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/monoschinos.js",
+      "supportedTypes": [
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "sololatino",
+      "name": "SoloLatino",
+      "description": "Unknown at last check (2026-10-04): sololatino.net answers a Cloudflare challenge (403) on its search to the test PC; Embed69 is inlined into the file (OwnTV's plugin host has no sibling require). Películas y series en Latino desde sololatino.net. Resuelve vía embed69. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/sololatino.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "pelisplushdnz",
+      "name": "PelisPlusHD NZ",
+      "description": "Flaky at last check (2026-10-04): Embed69 is inlined into the file (OwnTV's plugin host has no sibling require); 1 link for Oppenheimer, an embed-page address (VidHide mirror). Películas y series desde pelisplushd.bz. Resuelve vía embed69. (Copied unchanged from latinokodi/latinuvio-V2@c36c79e56504.)",
+      "version": "1.0.0",
+      "author": "copied from latinokodi/latinuvio-V2",
+      "filename": "providers/pelisplushdnz.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "es"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "enabled": true
+    }
+  ]
+}

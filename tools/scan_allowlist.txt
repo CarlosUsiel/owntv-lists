@@ -1,0 +1,9 @@
+# Known, deliberate findings of tools/scan_secrets.py. One per line: <path>:<first 12 hex of the SHA-256 of the value>
+# Recorded by hash, so this file leaks nothing. Every entry is a constant that the original provider author ships in a
+# public repository (or that OwnTV's port of a public app ships); none is an OwnTV credential.
+providers/providers/bcine.js:19799e026f5c     # CM_KEY: key of the site's own client-side stream cipher (same value in bcine, cinesrc, cinesu)
+providers/providers/cinesrc.js:19799e026f5c   # same CM_KEY
+providers/providers/cinesu.js:19799e026f5c    # same CM_KEY
+providers/providers/zxcstream.js:ccf395757cd5 # AES_KEY: passphrase the ZxcStream player's own JS uses to decrypt its answer
+providers/providers/megaplay.js:113311a6435e  # COOKIE SITE_TOTAL_ID: a fixed site cookie the original flow sends (no login)
+providers/providers/xdownloader.js:ca122346965e # Films365 'Bearer' token copied unchanged from ahmedelkassrawy/nuvio-providers: DECISION PENDING (see README, no-secrets policy)

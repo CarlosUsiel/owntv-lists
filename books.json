@@ -1,0 +1,98 @@
+{
+  "format": "owntv-media-sources",
+  "version": 1,
+  "mediaType": "books",
+  "sources": [
+    {
+      "id": "gutenberg",
+      "name": "Project Gutenberg",
+      "adapter": "gutenberg",
+      "baseUrls": [
+        "https://www.gutenberg.org"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "standard-ebooks",
+      "name": "Standard Ebooks",
+      "adapter": "opds",
+      "baseUrls": [
+        "https://standardebooks.org/feeds/opds/all"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "open-library",
+      "name": "Open Library",
+      "adapter": "openlibrary",
+      "baseUrls": [
+        "https://openlibrary.org"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "bookracy",
+      "name": "Bookracy",
+      "adapter": "bookracy",
+      "baseUrls": [
+        "https://api.bookracy.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "gutendex",
+      "name": "Gutendex",
+      "adapter": "gutendex",
+      "baseUrls": [
+        "https://gutendex.com"
+      ],
+      "enabled": true,
+      "status": "FLAKY",
+      "builtIn": true
+    },
+    {
+      "id": "feedbooks",
+      "name": "Feedbooks",
+      "adapter": "opds",
+      "baseUrls": [
+        "https://www.feedbooks.com/publicdomain/search.atom?query={searchTerms}"
+      ],
+      "enabled": true,
+      "status": "DEAD",
+      "builtIn": true
+    },
+    {
+      "id": "libgen",
+      "name": "Library Genesis",
+      "adapter": "libgen",
+      "baseUrls": [
+        "https://libgen.is",
+        "https://libgen.rs",
+        "https://libgen.st"
+      ],
+      "enabled": true,
+      "status": "UNKNOWN",
+      "builtIn": true
+    },
+    {
+      "id": "annas-archive",
+      "name": "Anna's Archive",
+      "adapter": "annas-archive",
+      "baseUrls": [
+        "https://annas-archive.org",
+        "https://annas-archive.se"
+      ],
+      "enabled": true,
+      "status": "UNKNOWN",
+      "builtIn": true
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "format": "owntv-suggested-repositories",
+  "version": 1,
+  "updated": "2026-10-05",
+  "repositories": [
+    {
+      "id": "owntv-pack",
+      "name": "OwnTV provider pack",
+      "kind": "nuvio",
+      "address": "@providers",
+      "description": "The OwnTV provider pack: 105 stream providers in Nuvio format (Latino, Castellano, English, anime). Public copy in the providers/ folder of this list repository, signed. Two providers (Hentaini, WatchHentai) are adult-only and are hidden on Kids profiles.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-archive",
+      "name": "Archive (Internet Archive)",
+      "kind": "kino",
+      "address": "kinotvapp/kino-plugin-archive",
+      "description": "Kino plugin: public-domain video from the Internet Archive. Free and legal.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-pluto",
+      "name": "Pluto TV, Samsung TV Plus, Roku",
+      "kind": "kino",
+      "address": "elmendezz/kino-plugin-pluto",
+      "description": "Live channels from Pluto TV, Samsung TV Plus and Roku TV (free, ad-supported).",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-tdtchannels",
+      "name": "TDTChannels",
+      "kind": "kino",
+      "address": "cuentademo051092/kino-plugin-tdtchannels",
+      "description": "Free-to-air TV channels from TDTChannels, with custom categories.",
+      "adult": false
+    },
+    {
+      "id": "kino-iptv-org-clean",
+      "name": "IPTV-org channels",
+      "kind": "kino",
+      "address": "ice-dev-x/kino-iptv-org-clean",
+      "description": "Channels from the public iptv-org list.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-caracol-tv",
+      "name": "Caracol Streaming (Ditu)",
+      "kind": "kino",
+      "address": "xuper-plugin/kino-plugin-caracol-tv",
+      "description": "Series, films and live channels from Caracol Streaming. Only works in Colombia.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-sr-regio",
+      "name": "Sr. Regio TV",
+      "kind": "kino",
+      "address": "cuentademo051092/Kino-plugin-SrRegiotv1",
+      "description": "Free-to-air TV channels from Sr. Regio, with custom categories.",
+      "adult": false
+    },
+    {
+      "id": "kino-iptv-247",
+      "name": "KinoIPTV 24/7",
+      "kind": "kino",
+      "address": "nicor1029/KinoIPTV",
+      "description": "24/7 channels with all kinds of content.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-own-server",
+      "name": "Your own media server",
+      "kind": "kino",
+      "address": "kinotvapp/kino-plugin-own-server",
+      "description": "Example plugin for your own media server (Jellyfin, Emby or NAS style), with a reference server to try it against.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-animeav1",
+      "name": "AnimeAV1",
+      "kind": "kino",
+      "address": "cuentademo051092/kino-plugin-animeav1",
+      "description": "Anime in Latin Spanish from AnimeAV1.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-animeflvone",
+      "name": "AnimeFLV One",
+      "kind": "kino",
+      "address": "YxhelZvl/plugin-animeflvone",
+      "description": "Subtitled anime from AnimeFLV One.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-lacartoons",
+      "name": "LaCartoons",
+      "kind": "kino",
+      "address": "YxhelZvl/plugin-lacartoons",
+      "description": "Retro cartoons from LaCartoons.",
+      "adult": false
+    },
+    {
+      "id": "kino-plugin-doramasorg",
+      "name": "Doramas.org",
+      "kind": "kino",
+      "address": "YxhelZvl/plugin-doramasorg",
+      "description": "Doramas from doramas.org.",
+      "adult": false
+    },
+    {
+      "id": "latinuvio-v2",
+      "name": "Latinuvio V2",
+      "kind": "nuvio",
+      "address": "latinokodi/latinuvio-V2",
+      "description": "Latino and Castellano film and series providers; the OwnTV pack copies 30 of them.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-yoruix",
+      "name": "yoruix providers",
+      "kind": "nuvio",
+      "address": "yoruix/nuvio-providers",
+      "description": "VidLink, VixSrc, DooFlix, NetMirror, 4KHDHub and Vidnest.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-ahmedelkassrawy",
+      "name": "ahmedelkassrawy providers",
+      "kind": "nuvio",
+      "address": "ahmedelkassrawy/nuvio-providers",
+      "description": "Stremio-add-on based and multi-server HLS providers (Rivestream, MovieNight, Movy, VaDaPaV, Vuflix, Films365).",
+      "adult": false
+    },
+    {
+      "id": "nuvio-a2r14n",
+      "name": "A2R14N providers",
+      "kind": "nuvio",
+      "address": "A2R14N/nuvio-providers",
+      "description": "VidZee, XPass and FSOnline (Romanian).",
+      "adult": false
+    },
+    {
+      "id": "nuvio-frankrsilva",
+      "name": "frankrsilva repository",
+      "kind": "nuvio",
+      "address": "frankrsilva/nuvio-repository",
+      "description": "PlayIMDb (movies and series) and Brazuca Play.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-phisher98",
+      "name": "phisher98 providers",
+      "kind": "nuvio",
+      "address": "phisher98/phisher-nuvio-providers",
+      "description": "KissKH and Hindmoviez.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-iberiaimm",
+      "name": "iberiaimm providers",
+      "kind": "nuvio",
+      "address": "iberiaimm/nuvio-providers",
+      "description": "VidSrc and Vidrock.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-ktsevents",
+      "name": "ktsevents providers",
+      "kind": "nuvio",
+      "address": "ktsevents/nuvio",
+      "description": "Mapple and PurStream (French).",
+      "adult": false
+    },
+    {
+      "id": "nuvio-videasy",
+      "name": "Videasy and Vidfast",
+      "kind": "nuvio",
+      "address": "Trixjustbetter/videasy-nuvio",
+      "description": "Videasy and Vidfast embed providers.",
+      "adult": false
+    },
+    {
+      "id": "nuvio-anthology",
+      "name": "anthology",
+      "kind": "nuvio",
+      "address": "falsisdev/anthology",
+      "description": "Providers including Vidmody (Turkish and multi-language, HLS).",
+      "adult": false
+    },
+    {
+      "id": "nuvio-municipalidad1998",
+      "name": "municipalidad1998 providers",
+      "kind": "nuvio",
+      "address": "municipalidad1998/nuvio-providers",
+      "description": "JKAnime (anime).",
+      "adult": false
+    },
+    {
+      "id": "stremio-cinemeta",
+      "name": "Cinemeta (Stremio)",
+      "kind": "addon",
+      "address": "https://v3-cinemeta.strem.io/manifest.json",
+      "description": "Stremio's official metadata add-on: movie and series catalogues. Also the host of Stremio's official and community add-on collections.",
+      "adult": false
+    },
+    {
+      "id": "stremio-addons-net",
+      "name": "stremio-addons.net",
+      "kind": "addon",
+      "address": "https://stremio-addons.net/api/manifest.json",
+      "description": "The stremio-addons.net directory as an add-on catalogue.",
+      "adult": false
+    }
+  ]
+}

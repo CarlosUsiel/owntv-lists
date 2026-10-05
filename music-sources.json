@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "format": "owntv-media-sources",
+  "version": 1,
+  "mediaType": "music",
+  "name": "OwnTV music sources",
+  "description": "The lossless (FLAC / Tidal) servers Music -> Sources starts from. A device reads this list with Music -> Sources -> Update list; it changes the addresses and statuses of the entries the app already has and adds the ones it does not (a source the person removed is not added back).",
+  "updated": "2026-10-05",
+  "sources": [
+    {
+      "id": "music-tidal-thevolecitor",
+      "name": "Tidal HiFi (thevolecitor)",
+      "adapter": "Tidal-HiFi",
+      "baseUrls": ["https://hifi-api.thevolecitor.qzz.io"],
+      "status": "works",
+      "notes": "Tidal hifi-api v2.10, no login; FLAC 16/44.1 and Hi-Res as DASH. Third-party, can stop at any time."
+    },
+    {
+      "id": "music-eclipse-phantomic12",
+      "name": "All In Eclipse (phantomic12)",
+      "adapter": "Qobuz-proxy",
+      "baseUrls": ["https://eclipse-backend.phantomic12.workers.dev"],
+      "status": "flaky",
+      "notes": "Speaks the Eclipse proxy protocol, but only had 128 kbps MP3 to give on 2026-10-04 (refused by the FLAC step)."
+    },
+    {
+      "id": "music-eclipse-qobuz",
+      "name": "Eclipse proxy (PlayTorrio)",
+      "adapter": "Qobuz-proxy",
+      "baseUrls": [
+        "https://qobuz-tidal-eclipse.cyrusna29.workers.dev",
+        "https://qobuz-tidal-eclipse.cyrusna29.workers.dev/u/4opn823jmxs6yee60au24sse15kp"
+      ],
+      "status": "dead",
+      "follows": "PlayTorrio lib/services/music/qobuz_music_service.dart (defaultEndpoint, generateUrl); check with tools/fork/check_playtorrio_flac.py in OwnTV core",
+      "notes": "The worker PlayTorrio v1.1.6 ships; Cloudflare answers error 1042 (its account is gone) since 2026-10-04."
+    }
+  ]
+}

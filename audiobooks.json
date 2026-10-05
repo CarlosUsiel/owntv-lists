@@ -1,0 +1,131 @@
+{
+  "format": "owntv-media-sources",
+  "version": 1,
+  "mediaType": "audiobooks",
+  "sources": [
+    {
+      "id": "librivox",
+      "name": "LibriVox",
+      "adapter": "librivox-api",
+      "baseUrls": [
+        "https://librivox.org"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "archive",
+      "name": "Internet Archive",
+      "adapter": "internet-archive",
+      "baseUrls": [
+        "https://archive.org"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "bookaudiobooks",
+      "name": "Book Audiobooks",
+      "adapter": "wordpress-author-first",
+      "baseUrls": [
+        "https://bookaudiobooks.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "goldenaudiobooks",
+      "name": "Golden Audiobooks",
+      "adapter": "wordpress-author-first",
+      "baseUrls": [
+        "https://goldenaudiobooks.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "fulllengthaudiobooks",
+      "name": "Full Length Audiobooks",
+      "adapter": "wordpress-author-first",
+      "baseUrls": [
+        "https://fulllengthaudiobooks.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "hotaudiobooks",
+      "name": "Hot Audiobooks",
+      "adapter": "wordpress-title-by-author",
+      "baseUrls": [
+        "https://hotaudiobooks.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "audiozaic",
+      "name": "Audiozaic",
+      "adapter": "wordpress-listen-page",
+      "baseUrls": [
+        "https://audiozaic.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "audiobooks4soul",
+      "name": "Audiobooks4Soul",
+      "adapter": "wordpress-encrypted",
+      "baseUrls": [
+        "https://audiobooks4soul.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true
+    },
+    {
+      "id": "audiobookbay",
+      "name": "AudiobookBay",
+      "adapter": "audiobookbay-torrent",
+      "baseUrls": [
+        "https://audiobookbay.lu"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true,
+      "notes": "Torrent index: the book streams through the built-in torrent engine (Settings > Torrents must be on). The site moves between domains: add the new address as a mirror."
+    },
+    {
+      "id": "audionest",
+      "name": "Audionest",
+      "adapter": "audionest-api",
+      "baseUrls": [
+        "https://search.audionestapp.com"
+      ],
+      "enabled": true,
+      "status": "WORKS",
+      "builtIn": true,
+      "notes": "Uses a search token and a Firebase key that PlayTorrio found inside the Audionest app, not credentials issued to OwnTV. They worked on 2026-10-04 and may stop at any time. Put your own search token in API key to replace the built-in one."
+    },
+    {
+      "id": "audioaz",
+      "name": "AudioAZ",
+      "adapter": "audioaz-site",
+      "baseUrls": [
+        "https://audioaz.com"
+      ],
+      "enabled": true,
+      "status": "DEAD",
+      "builtIn": true,
+      "notes": "The site became a script-rendered app: search lists books but a book page has no audio in its HTML, so no files are found."
+    }
+  ]
+}

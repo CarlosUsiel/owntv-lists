@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Never commit keys or local secrets
+*.key
+*.pem
+.env
+.env.*
+local.properties
+secrets*.json
+.owntv-keys/
+
+# Scratch output of the tools
+*.tmp
+*.bak
+out/
