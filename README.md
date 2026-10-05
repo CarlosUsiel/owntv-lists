@@ -22,8 +22,13 @@ convenience, never a dependency.
 | `providers/` | a Nuvio provider repository: `manifest.json` and `providers/<id>.js`, plus `signature.json` once signed | Plugins, repository `@providers` (the entry `owntv-pack` of the suggested list) |
 | `tools/` | Python 3 scripts, no packages | the maintainer |
 
-The "Read by" column names the part of the app each file is meant for; the public-list reader that fetches
-them is part of the same task as this repository and is not wired up yet.
+The app reads these files from **Settings -> Sources -> Repository addresses -> Public list address**
+(a folder address such as `https://raw.githubusercontent.com/<owner>/<repo>/main`; empty by default). A list
+that cannot be read falls back to its last saved copy, then to the copy built into the app
+(`tools/sync_public_lists.py` in the core repository copies these five files into the app). The source
+lists add only sources the app does not have yet (never changing what is there, never re-adding one the
+person removed); the suggested list fills "Suggested repositories" on the same page. Music's list is read
+by Music -> Sources -> Update list.
 
 ### The shared source lists
 
@@ -86,7 +91,7 @@ python ../owntv-provider-pack/tools/sign_pack.py sign   --root providers
 python ../owntv-provider-pack/tools/sign_pack.py verify --root providers
 ```
 
-`signature.json` is not in the repository until that is done.
+`signature.json` is in the repository (signed 2026-10-05); sign again after every change to `providers/`.
 
 ## Tools
 
