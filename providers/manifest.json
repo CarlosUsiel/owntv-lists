@@ -1,6 +1,6 @@
 {
   "name": "OwnTV provider pack",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "OwnTV's own pack: every provider found in ARVIO, lolapp and PlayTorrio, plus the Latinuvio V2 providers, ported or copied unchanged from the public Nuvio repositories that have them. Every provider ships enabled (the owner's choice); the ones that did not work at the last check say so at the start of their description.",
   "author": "OwnTV",
   "scrapers": [
@@ -1994,6 +1994,27 @@
       "formats": [
         "m3u8",
         "mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "vidgod",
+      "name": "VidGod",
+      "description": "VidGod (vidgod.space): links from its three extractor servers (Pulsar, Orion, Stellar), checked; films worked at the last check (2026-10-05), series gave none. From PlayTorrio.",
+      "version": "1.0.0",
+      "author": "OwnTV (port of PlayTorrio)",
+      "filename": "providers/vidgod.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4",
+        "mkv"
       ],
       "enabled": true
     }

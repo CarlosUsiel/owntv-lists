@@ -4,10 +4,10 @@
   "alg": "Ed25519",
   "keyId": "8e88781c6450ef57",
   "pack": "OwnTV provider pack",
-  "packVersion": "1.3.1",
-  "signedAt": "2026-10-05T16:02:24Z",
+  "packVersion": "1.4.0",
+  "signedAt": "2026-10-05T16:32:01Z",
   "files": {
-    "manifest.json": "0e89ef5e0f18d78e76183416b0aa017ff894a3fc4c2c64d1bdccada548f09899",
+    "manifest.json": "1cdf0836753dcf5e7f9394055ff1087a5f875e9c258236147b2fe9245c0c0fb0",
     "providers/a111477.js": "92630ccf300319ba2cfc078c92f5e68677a513fb9f59164f5798cb11107a3693",
     "providers/allpeliculasse.js": "d65009aed6c3119bc1d53cb7c8db4db2bc3cfc467fde127ac36cfbfb9ff648f6",
     "providers/anidb.js": "7f6ec29e69cd2aefc661df6d495967fbd4d93f2fd7eccf5f93ea5f345a4901e3",
@@ -97,6 +97,7 @@
     "providers/vidcore.js": "36a64b6ad0553edd4b777d67cc484124f72bfcb0a857275c9d04a0d060867500",
     "providers/videasy.js": "ae93c670ba3740402845a8f5e8ac0fbb8b55aacd1aa04c1505b0e4be86487106",
     "providers/vidfast.js": "ca354dd032fa777e2b3bd3cfd65ea9a053769544b0fa2926a448508017027dff",
+    "providers/vidgod.js": "13324733005acf2bee8f98ef9d6bfa830faea723720b4ecb56658426d56751cb",
     "providers/vidlink.js": "90193b186083d22f7a13299df1d5d2cfed8f5047fa5ad7a8afe077a8bbdb8f58",
     "providers/vidmody.js": "ea93380754d5803ca8e7c864d8fac634ad1dca453dc6c6d202522671137a2284",
     "providers/vidnest-anime.js": "e21bd8269d14de0bd00fd096b112e7056d5dd12517cee9e6782ec417e4581f1b",
@@ -113,5 +114,5 @@
     "providers/xpass.js": "56532f7a61c3ac2b3d50b5107113c0d5e16c3ce1447a5461558ae3326d574c25",
     "providers/zxcstream.js": "3e1804757ea66eb725dec8c4b960f808515479c7bcc491981ed0771ecad326e2"
   },
-  "signature": "G6kNc6gY4syD+nHcxUfC8Jouq67ZLbUlUub0KhO7BIPA/9fVWD5xvPj2HD73Nr/2niXwcj14P5V475H+ajzpCg=="
+  "signature": "jwyNMmrwNA4QlqkaiYGjXJP8zRL7awEjn/bRHq0VBTmgpWBxO9MFh1NgO52Iv6bjMLkQCvO3w6wcT3W5tmEcDw=="
 }

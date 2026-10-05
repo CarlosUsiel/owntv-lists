@@ -18,6 +18,8 @@ What it does
   * exits non-zero when a TMDB-context 32-hex literal remains, a file the manifest names is missing,
     or a changed file no longer parses.
 
+Providers in PRIVATE_ONLY (owner's decision) are left out of the copy: their manifest entry and file.
+
 signature.json is NOT written here: the pack is signed afterwards with tools/sign_pack.py of the
 private pack repository. Re-sign after every run of this tool.
 """
@@ -32,6 +34,9 @@ import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _hexscan import mask, tmdb_hits  # noqa: E402
+
+# Owner's decision (2026-10-05): stays in the private pack only (it carries a third-party token).
+PRIVATE_ONLY = {"xdownloader"}
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -66,6 +71,12 @@ def main(argv: list[str]) -> int:
     with open(manifest_path, "rb") as f:
         manifest_bytes = f.read()
     manifest = json.loads(manifest_bytes.decode("utf-8"))
+    if any(s["id"] in PRIVATE_ONLY for s in manifest["scrapers"]):
+        for s in manifest["scrapers"]:
+            if s["id"] in PRIVATE_ONLY:
+                print(f"left out (private only): {s['id']}")
+        manifest["scrapers"] = [s for s in manifest["scrapers"] if s["id"] not in PRIVATE_ONLY]
+        manifest_bytes = (json.dumps(manifest, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
     names = [s["filename"] for s in manifest["scrapers"]]
     problems = 0
     sources: dict[str, str] = {}

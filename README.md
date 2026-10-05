@@ -138,4 +138,6 @@ says the pack stays private because of this; publishing `providers/` is the owne
 ## Owner decisions (2026-10-05)
 - Publish every provider, including the two adult providers.
 - `xdownloader.js` is left out of this public copy (it carries a third-party token); it stays in the owner's private pack.
+  `tools/make_public_pack.py` leaves it out by itself (`PRIVATE_ONLY`).
+- Pack 1.4.0 (2026-10-05): VidGod added (port of PlayTorrio v1.1.2, without its Redis cache and its token); 105 providers here.
 - Third-party TMDB keys are stripped from this copy.
