@@ -4,9 +4,7 @@ The lists OwnTV can read from one configurable web address instead of from a new
 sources of Music, Manga, Audiobooks and Books, a list of suggested plugin repositories and add-on
 catalogues, and a public, signed copy of the OwnTV provider pack.
 
-**Status: prepared locally, not published.** No remote is configured and nothing is pushed. The app's
-setting for the public list address is empty by default; until the owner approves a public repository
-and enters its address, the app uses the copy of these lists that is built into it. When the address is
+**Status: published (2026-10-05) by the owner's decision.** The app's public list address points here; it uses the copy of these lists that is built into it When the address is
 set but unreachable (offline, GitHub down), the app falls back to that built-in copy too, so a list is a
 convenience, never a dependency.
 
@@ -135,3 +133,9 @@ repositories state no licence (frankrsilva/nuvio-repository, A2R14N/nuvio-provid
 ahmedelkassrawy/nuvio-providers, latinokodi/latinuvio-V2, municipalidad1998/nuvio-providers): their files
 remain their authors' work, and GPL-3.0 here covers only what OwnTV wrote. The pack repository's own README
 says the pack stays private because of this; publishing `providers/` is the owner's call.
+
+
+## Owner decisions (2026-10-05)
+- Publish every provider, including the two adult providers.
+- `xdownloader.js` is left out of this public copy (it carries a third-party token); it stays in the owner's private pack.
+- Third-party TMDB keys are stripped from this copy.

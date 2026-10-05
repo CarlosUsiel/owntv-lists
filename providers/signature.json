@@ -5,9 +5,9 @@
   "keyId": "8e88781c6450ef57",
   "pack": "OwnTV provider pack",
   "packVersion": "1.3.1",
-  "signedAt": "2026-10-05T14:05:46Z",
+  "signedAt": "2026-10-05T16:02:24Z",
   "files": {
-    "manifest.json": "8bd19542930f26068365aeb2c2b28c150befe5a379de2669724ef10f52833827",
+    "manifest.json": "0e89ef5e0f18d78e76183416b0aa017ff894a3fc4c2c64d1bdccada548f09899",
     "providers/a111477.js": "92630ccf300319ba2cfc078c92f5e68677a513fb9f59164f5798cb11107a3693",
     "providers/allpeliculasse.js": "d65009aed6c3119bc1d53cb7c8db4db2bc3cfc467fde127ac36cfbfb9ff648f6",
     "providers/anidb.js": "7f6ec29e69cd2aefc661df6d495967fbd4d93f2fd7eccf5f93ea5f345a4901e3",
@@ -110,9 +110,8 @@
     "providers/vixsrc.js": "0279def19cd8ef43e8be484c7dc5b75cd950dad6f95072343ea86f707237849d",
     "providers/vuflix.js": "a3428d5533e363cd02c1a12163b4c88da103c3fc3a0118302e04ffec5a98a3bb",
     "providers/watchhentai.js": "28891610da8758843e9fb0ac56aef2cb10396f70f61eaa2b9c0405a850d6ee17",
-    "providers/xdownloader.js": "450171b01bd6445dfc0947292c6ce4fd6bb4cee588cc7ccb5944ce73693c7344",
     "providers/xpass.js": "56532f7a61c3ac2b3d50b5107113c0d5e16c3ce1447a5461558ae3326d574c25",
     "providers/zxcstream.js": "3e1804757ea66eb725dec8c4b960f808515479c7bcc491981ed0771ecad326e2"
   },
-  "signature": "ut3aqVmel2ZcvJdCttrkbyDFULzCEKoQnpKXTZPmRVP7PulanULWASMRgiZUZUZ4W9lUe7QBaseCly/kEuK7Cw=="
+  "signature": "G6kNc6gY4syD+nHcxUfC8Jouq67ZLbUlUub0KhO7BIPA/9fVWD5xvPj2HD73Nr/2niXwcj14P5V475H+ajzpCg=="
 }

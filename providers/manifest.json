@@ -809,25 +809,6 @@
       "enabled": true
     },
     {
-      "id": "xdownloader",
-      "name": "XDownloader",
-      "description": "Films365 API, bearer auth; movie direct + TV season/episode. (Copied unchanged from ahmedelkassrawy/nuvio-providers@6ffcfa8f0e21.)",
-      "version": "0.2.0",
-      "author": "copied from ahmedelkassrawy/nuvio-providers",
-      "filename": "providers/xdownloader.js",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "contentLanguage": [
-        "en"
-      ],
-      "formats": [
-        "m3u8"
-      ],
-      "enabled": true
-    },
-    {
       "id": "vidnest",
       "name": "Vidnest",
       "description": "Not working at last check (2026-10-04): first.vidnest.fun answers 530 (origin unreachable) for every server. Vidnest streaming with encrypted AES-GCM sources. (Copied unchanged from yoruix/nuvio-providers@ed38d1aee002.)",
